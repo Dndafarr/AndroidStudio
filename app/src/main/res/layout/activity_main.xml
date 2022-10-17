@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/login"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="399dp"
+        android:fontFamily="@font/roboto"
+        android:lineSpacingExtra="8sp"
+        android:text="Shop the most modern essentials"
+        android:textColor="#fff"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="134dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#fff"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_horizontal"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="683dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#D94A40"
+            android:fontFamily="@font/poppins"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="150dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="528dp"
+        android:layout_marginBottom="177dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/circlered" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
